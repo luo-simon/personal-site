@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#1e2d22" />
   <title>Hello, I'm Simon.</title>
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
@@ -23,12 +23,21 @@
     }
 
     html, body {
-      width: 100%; height: 100%;
-      overflow: hidden;
+      width: 100%;
+      min-height: 100%;
       cursor: none;
+      background: #1e2d22;
+    }
+
+    html {
+      height: -webkit-fill-available;
     }
 
     body {
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: 100dvh;
+      overflow: hidden;
       font-family: 'Cormorant Garamond', serif;
       background: #1e2d22;
       color: var(--cream);
@@ -143,7 +152,9 @@
       position: relative;
       z-index: 2;
       width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: 100dvh;
     }
 
     /* ── Hero card ── */
