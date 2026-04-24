@@ -147,6 +147,18 @@
       pointer-events: none;
     }
 
+    @media (max-width: 768px) {
+      .vignette {
+        background:
+          linear-gradient(to bottom,
+            #3c4a3c 0,
+            rgba(60, 74, 60, 0) 90px,
+            rgba(60, 74, 60, 0) calc(100% - 90px),
+            #3c4a3c 100%),
+          radial-gradient(ellipse at 50% 50%, transparent 50%, rgba(10,20,12,0.35) 100%);
+      }
+    }
+
     /* ── Page ── */
     .page {
       position: relative;
